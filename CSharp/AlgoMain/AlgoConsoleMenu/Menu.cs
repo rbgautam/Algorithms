@@ -23,7 +23,13 @@ namespace ConsoleMenu
 
         public void DisplayMenu(List<Menu> menuitems) {
             //TODO: Add logic to create Hierarchial menu sturcture (eg. Menu with subitems)
+            foreach (var item in menuitems)
+            {
+                string menuItem = String.Format("{0}. {1}",item.MenuId,item.Displaylabel); 
+                Console.WriteLine(menuItem);
 
+                Console.ReadLine();
+            }
 
         }
     }
