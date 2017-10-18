@@ -27,9 +27,9 @@ namespace ConsoleMenu
             {
                 string menuItem = String.Format("{0}. {1}",item.MenuId,item.Displaylabel); 
                 Console.WriteLine(menuItem);
-
-                Console.ReadLine();
             }
+
+            Console.ReadLine();
 
         }
     }
