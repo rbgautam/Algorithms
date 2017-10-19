@@ -6,9 +6,29 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    public class SingleNode
+    public class SingleNode<T>: ListOperations<T>
     {
         Object Data;
-        SingleNode Next;
+        SingleNode<T> Next;
+
+        public bool Add(T newitem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Delete()
+        {
+            throw new NotImplementedException();
+        }
+
+        public T Fetch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
