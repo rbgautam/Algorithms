@@ -11,7 +11,7 @@ namespace DataStructures
     /// </summary>
     public interface ListOperations<T>
     {
-        bool Add();
+        bool Add(T newitem);
         T Fetch();
         bool Update();
         bool Delete();
