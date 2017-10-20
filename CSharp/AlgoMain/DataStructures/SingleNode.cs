@@ -6,29 +6,30 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    public class SingleNode<T>: ListOperations<T>
+    public class SingleNode<T>
     {
-        Object Data;
-        SingleNode<T> Next;
-
-        public bool Add(T newitem)
+        private T Data;
+        private SingleNode<T> Next;
+        public SingleNode(T data, SingleNode<T> next)
         {
-            throw new NotImplementedException();
+            Data = data;
+            Next = next;
         }
 
-        public bool Delete()
+
+
+
+        public T LinkData
         {
-            throw new NotImplementedException();
+            get { return Data; }
+            set { Data= value; }
         }
 
-        public T Fetch()
-        {
-            throw new NotImplementedException();
-        }
 
-        public bool Update()
+        public SingleNode<T> NextNode
         {
-            throw new NotImplementedException();
+            get { return Next; }
+            set { Next = value; }
         }
     }
 }

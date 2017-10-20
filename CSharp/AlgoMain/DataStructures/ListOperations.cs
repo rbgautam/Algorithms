@@ -10,11 +10,12 @@ namespace DataStructures
     /// Interface for the CRUD Operations
     /// </summary>
     public interface ListOperations<T>
-    {
-        bool Add(T newitem);
-        T Fetch();
-        bool Update();
-        bool Delete();
+    { 
+        bool AddFirst(SingleNode<T> newnode);
+        SingleNode<T> Find(T finddata);
+        bool Update(T olddata, T newdata);
+        bool DeleteFirst();
+        int GetSize();
 
     }
 }
