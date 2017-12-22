@@ -9,3 +9,6 @@
 /CSharp/AlgoMain/DataStructures/bin/Debug
 /CSharp/AlgoMain/DataStructures/obj/Debug
 Java/.recommenders/
+*.dll
+CSharp/AlgoOptionsService/AlgoOptionsService/obj/
+CSharp/AlgoOptionsService/packages/

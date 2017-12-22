@@ -1,0 +1,19 @@
+<xml>
+	<ROOT>
+		<Difficulty level="1" type = "Basic" >
+			<Algos>
+				<Name>Algo1</Name>
+			</Algos>	
+		</Difficulty>			
+		<Difficulty level="2" type ="Intermediate">
+			<Algos>
+				<Name>Algo2</Name>
+			</Algos>			
+		</Difficulty>			
+		<Difficulty level="3" type ="Advanced">
+			<Algos>
+				<Name>Algo3</Name>
+			</Algos>			
+		</Difficulty>			
+	</ROOT>
+</xml>
