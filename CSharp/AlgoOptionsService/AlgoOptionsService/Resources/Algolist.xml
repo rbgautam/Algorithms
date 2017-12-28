@@ -1,19 +1,60 @@
 <xml>
 	<ROOT>
-		<Difficulty level="1" type = "Basic" >
+		<Category type = "Data structures" >
 			<Algos>
-				<Name>Algo1</Name>
+				<Name>1D Array</Name>
+        <Name>2D Array</Name>
+        <Name>Dynamic Array</Name>
+        <Name>Linked-List</Name>
 			</Algos>	
-		</Difficulty>			
-		<Difficulty level="2" type ="Intermediate">
-			<Algos>
-				<Name>Algo2</Name>
-			</Algos>			
-		</Difficulty>			
-		<Difficulty level="3" type ="Advanced">
-			<Algos>
-				<Name>Algo3</Name>
-			</Algos>			
-		</Difficulty>			
-	</ROOT>
+		</Category>
+    <Category type = "Collections" >
+      <Algos>
+        <Name>ArrayList</Name>
+        <Name>LinkedList</Name>
+        <Name>Hashmap</Name>
+      </Algos>
+    </Category>
+    <Category type = "Searching" >
+      <Algos>
+        <Name>Linear Search</Name>
+        <Name>Binary Search</Name>
+      </Algos>
+    </Category>
+    <Category type = "Sorting" >
+      <Algos>
+        <Name>Bubble Sort</Name>
+        <Name>Selection Sort</Name>
+        <Name>Quick Sort</Name>
+        <Name>Merge Sort</Name>
+        <Name>Heap Sort</Name>
+      </Algos>
+    </Category>
+    <Category type = "Trees" >
+      <Algos>
+        <Name>Binary Tree</Name>
+        <Name>Red-Black Tree</Name>
+      </Algos>
+    </Category>
+    <Category type = "Graph" >
+      <Algos>
+        <Name>Matrix Representation</Name>
+        <Name>Adjacency List Representation</Name>
+        <Name>Depth First Search</Name>
+        <Name>Breadth First Search</Name>
+        <Name>Backtracking</Name>
+        <Name>Pre-Order</Name>
+        <Name>Post-Order</Name>
+        <Name>Dijktra's Algorithm</Name>
+        <Name>A* Algorithm</Name>
+        
+      </Algos>
+    </Category>
+    <Category type = "Dynamic Programming" >
+      <Algos>
+        <Name>Algo1</Name>
+      </Algos>
+    </Category>
+
+  </ROOT>
 </xml>

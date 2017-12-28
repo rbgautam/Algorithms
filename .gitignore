@@ -12,3 +12,7 @@ Java/.recommenders/
 *.dll
 CSharp/AlgoOptionsService/AlgoOptionsService/obj/
 CSharp/AlgoOptionsService/packages/
+CSharp/AlgoOptionsService/AlgoOptionsService/bin/AlgoOptionsService.dll.config
+CSharp/AlgoOptionsService/AlgoOptionsService/bin/
+CSharp/AlgoOptionsService/OptionContollerUnitTest/bin/
+CSharp/AlgoOptionsService/OptionContollerUnitTest/obj/
