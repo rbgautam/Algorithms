@@ -1,6 +1,6 @@
 package com.forgeinnovations.driver;
 
-public class main {
+public class Driver {
 
 	public static void main(String[] args) {
 		CLIConsole.ShowConsole();

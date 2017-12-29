@@ -28,7 +28,7 @@ public class CLIConsole {
 			break;
 		}
 		
-		
+		scanner.close();
 		
 		
 	}
