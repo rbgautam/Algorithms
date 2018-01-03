@@ -1,6 +1,6 @@
 package com.forgeinnovations.data.model;
 
-public class darwChart {
+public class DrawChart {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
