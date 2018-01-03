@@ -30,13 +30,14 @@ public class LinkedList<T> {
 	}
 	
 	public boolean deleteNode(T compdata){
-		Node n = head.next;
+		Node n = head;
 		Node prev = n;
 		try {
 			while(n.next != null){
-				if(n.data.equals(compdata))
+				if(n.data!= null && n.data.equals(compdata))
 				{
 					prev.next = n.next;
+					break;
 				}
 				prev = n;
 				n = n.next;
@@ -88,7 +89,7 @@ public class LinkedList<T> {
 		
 		studentList.printList();
 		
-		studentList.deleteNode(new Student("Bilal", 23));
+		studentList.deleteNode(new Student("Bilal", 0));
 		
 		studentList.printList();
 	}
