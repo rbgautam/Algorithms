@@ -86,7 +86,16 @@ public class TicTacToe {
 
 	private boolean IsValidMove(String move) {
 		// TODO Auto-generated method stub
-		return false;
+		if(move.indexOf(',') <0 )
+			return false;
+		
+		String[] currMove = move.split(",");
+		if(currMove.equals(" ") || currMove[0].equals("") ||currMove[1].equals("") )
+			return false;
+		if(Integer.parseInt(currMove[0]) >2 || Integer.parseInt(currMove[1]) >2)
+			return false;
+		
+		return true;
 	}
 	
 	
