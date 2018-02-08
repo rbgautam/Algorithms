@@ -1,10 +1,11 @@
 package com.forgeinnovations.interview;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class TicTacToe {
 	private char[][] board = new char[3][3];
-	private int numMoves = 0;
+	private int numMoves = 1;
 	private boolean AIPlayer = false; //
 	private char[] tokens = {'O','X'};
 	private HashMap<String,Integer> movesDict= new HashMap<>();
@@ -68,12 +69,24 @@ public class TicTacToe {
 
 	private void promptHuman() {
 		
-		System.out.println("Human player's move:");
-		
+		System.out.println("Human player's move:(enter row,column(0 Indexed))");
+		Scanner scan = new Scanner(System.in);
 		//Read Move
-		
+		String move  = scan.next();
 		//Validate if its a Valid move 
-		
+		if(!movesDict.containsKey(move) && IsValidMove(move))
+			movesDict.put(move, numMoves);
+		else {
+			System.out.println("Invalid move: \nUsage: Enter row,column (0 Indexed)");
+			promptHuman();
+		}
+			
+	}
+
+
+	private boolean IsValidMove(String move) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 	
