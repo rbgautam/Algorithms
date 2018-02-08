@@ -1,10 +1,13 @@
 package com.forgeinnovations.interview;
 
+import java.util.HashMap;
+
 public class TicTacToe {
 	private char[][] board = new char[3][3];
 	private int numMoves = 0;
 	private boolean AIPlayer = false; //
 	private char[] tokens = {'O','X'};
+	private HashMap<String,Integer> movesDict= new HashMap<>();
 	
 	public void InitailizeBoard() {
 		for(int i = 0; i<3;i++) {
@@ -43,6 +46,7 @@ public class TicTacToe {
 		
 		while(numMoves <= 9 ) {
 			//TODO: add moves
+			if(AIPlayer) playAIMove();
 			if(!AIPlayer) promptHuman();
 			//Check for winning move
 			//
@@ -55,9 +59,16 @@ public class TicTacToe {
 	}
 
 
+	private void playAIMove() {
+		
+		//Check all occupied squares 
+		System.out.println("AI player move:");
+	}
+
+
 	private void promptHuman() {
 		
-		System.out.println("Human's player move:");
+		System.out.println("Human player's move:");
 		
 		//Read Move
 		
