@@ -24,6 +24,8 @@ def binary_search(list, item):
     
 my_list = [1,2,5,8,9,13]
 
+print (my_list)
+
 print (binary_search(my_list,5))
 
 print (binary_search(my_list, -1))   
