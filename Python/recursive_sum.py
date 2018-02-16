@@ -10,16 +10,19 @@ Method returns the sum of all elements in an array arr
 """
 finalSum = 0
 def recursive_sum(arr,currsum):
-    if len(arr) == 0:
-        #print(currsum)
+    currsum += arr.pop()
+       
+    if len(arr) == 0 :
+        #print(arr)
         return currsum
     else:
-        currsum += arr.pop()
-#        print(currsum)
-        recursive_sum(arr,currsum)
+        #print(arr)
+        return recursive_sum(arr,currsum)
 
-array = [1,2,3,4,5,6,7]
+my_array = [1,2,3,4,5,6,7]
 
-finalSum = recursive_sum(array,0)
+
+
+finalSum = recursive_sum(my_array,0)
 
 print(finalSum)
