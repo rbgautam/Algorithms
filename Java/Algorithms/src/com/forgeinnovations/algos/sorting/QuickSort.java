@@ -26,7 +26,7 @@ public class QuickSort {
 		
 		//Divide into 2 lists
 		while(i<=j) {
-			System.out.println(String.format("pivot=%d", pivot));
+			//System.out.println(String.format("pivot=%d", pivot));
 			//Keep going until current element(left of the pivot) less than the pivot
 			while(numbers[i] < pivot) {
 				i++;
@@ -47,13 +47,13 @@ public class QuickSort {
 			
 			//recursion
 			if(low <j) {
-				System.out.println(String.format("low=%d,j=%d", low,j));
+				//System.out.println(String.format("low=%d,j=%d", low,j));
 				QuickSort(numbers,low,j);
 				
 			}
 				
 			if(i< high ) {
-				System.out.println(String.format("i=%d,high=%d", i,high));
+				//System.out.println(String.format("i=%d,high=%d", i,high));
 				QuickSort(numbers,i,high);
 			}
 				
@@ -65,7 +65,7 @@ public class QuickSort {
 
 
 	private static int[] swap(int i, int j, int[] arr) {
-		System.out.println(String.format("SWAP: i=%d,high=%d", i,j));
+		//System.out.println(String.format("SWAP: i=%d,high=%d", i,j));
 		int temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] =temp;
